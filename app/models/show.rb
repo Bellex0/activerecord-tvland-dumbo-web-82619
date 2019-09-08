@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   
   def actors_list
     self.Actors.map do |actor|
-      "#{self.actor.first_name} "
+      "#{self.actor.first_name} #{self.actor.last_name}"
   end
 
 
