@@ -3,8 +3,8 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
   
   def actors_list
-    Actors.map do |actor|
-      "#{actor.first_name} #{actor.last_name}"
+    self.Actors.map do |actor|
+      "#{self.actor.first_name} #{self.actor.last_name}"
   end
 end
 
