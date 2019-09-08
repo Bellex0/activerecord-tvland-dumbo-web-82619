@@ -6,6 +6,7 @@ class Show < ActiveRecord::Base
     Actors.map do |actor|
       "#{actor.first_name} #{actor.last_name}"
   end
+end
 
 
 
