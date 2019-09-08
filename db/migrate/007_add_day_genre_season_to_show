@@ -1,5 +1,5 @@
-class AddDayGenreSeasonToShow < ActiveRecord::Migration[5.2]
+class AddDayGenreSeasonToShows < ActiveRecord::Migration[5.2]
     def change
-        add_column :show, :catchphrase, :string
+        add_column :shows, :catchphrase, :string
     end
 end
